@@ -20,4 +20,4 @@ Run the following command to try the node version:
 - [ ] create a separate but similar class to Scrape all flights
 - [ ] Scrape the airline logos and return the link to the logo in the json
 - [ ] Return the link to book the flight in the json
-- [ ] Fix puppeter version
+- [ ] Fix puppeter version, puppeteer version in a.js uses selectors which makes the code less stable. Change it to use xpath instead just like the ```scrape.py``` version.
