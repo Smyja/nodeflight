@@ -1,0 +1,134 @@
+[
+    {
+        "thumbnail": "",
+        "companyName": "Scandinavian Airlines, Turkish Airlines",
+        "description": "Leaves EWR at 11:30 PM on 2023-07-15 and arrives at IST at 11:35 PM+1 on 2023-07-25.",
+        "duration": "17 hr 5 min",
+        "airportLeave": "EWR",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 1) is a 5 hr 50  layover at  GOT.",
+        "emisions": "",
+        "price": "NGN364923.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Scandinavian Airlines, Turkish Airlines",
+        "description": "Leaves EWR at 5:20 PM on 2023-07-15 and arrives at IST at 3:50 PM+1 on 2023-07-25.",
+        "duration": "15 hr 30 min",
+        "airportLeave": "EWR",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 1) is a 3 hr 50  layover at  ARN.",
+        "emisions": "",
+        "price": "NGN365770.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Turkish Airlines",
+        "description": "Leaves JFK at 12:50 PM on 2023-07-15 and arrives at IST at 5:40 AM+1 on 2023-07-25.",
+        "duration": "9 hr 50 min",
+        "airportLeave": "JFK",
+        "airportArive": "IST",
+        "layover": "Nonstop",
+        "emisions": "Carbon emissions estimate: 481.0 kilograms. -14% emissions ",
+        "price": "NGN672984.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Scandinavian Airlines, Turkish Airlines",
+        "description": "Leaves EWR at 5:20 PM on 2023-07-15 and arrives at IST at 8:00 PM+1 on 2023-07-25.",
+        "duration": "19 hr 40 min",
+        "airportLeave": "EWR",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 1) is a 8 hr 5  layover at  ARN.",
+        "emisions": "",
+        "price": "NGN365770.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Scandinavian Airlines, Turkish Airlines",
+        "description": "Leaves EWR at 6:50 PM on 2023-07-15 and arrives at IST at 7:35 PM+1 on 2023-07-25.",
+        "duration": "17 hr 45 min",
+        "airportLeave": "EWR",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 1) is a 6 hr 30  layover at  OSL.",
+        "emisions": "",
+        "price": "NGN494387.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Scandinavian Airlines, Turkish Airlines",
+        "description": "Leaves EWR at 6:50 PM on 2023-07-15 and arrives at IST at 4:45 PM+1 on 2023-07-25.",
+        "duration": "14 hr 55 min",
+        "airportLeave": "EWR",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 1) is a 3 hr 35  layover at  OSL.",
+        "emisions": "",
+        "price": "NGN570944.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Norse Atlantic Airways, Corendon, Turkish Airlines",
+        "description": "Leaves JFK at 11:55 PM on 2023-07-15 and arrives at IST at 4:55 AM+2 on 2023-07-25.",
+        "duration": "22 hr",
+        "airportLeave": "JFK",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 2) is a None layover at ['BER, AYT'].",
+        "emisions": "Carbon emissions estimate: 594.0 kilograms. 7% emissions ",
+        "price": "NGN574332.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Scandinavian Airlines, Turkish Airlines",
+        "description": "Leaves EWR at 5:35 PM on 2023-07-15 and arrives at IST at 2:50 PM+1 on 2023-07-25.",
+        "duration": "14 hr 15 min",
+        "airportLeave": "EWR",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 1) is a 3 hr 20  layover at  CPH.",
+        "emisions": "Carbon emissions estimate: 594.0 kilograms. 7% emissions ",
+        "price": "NGN575939.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Air Canada, Turkish AirlinesOperated by Air Canada Express - Jazz",
+        "description": "Leaves LGA at 5:35 PM on 2023-07-15 and arrives at IST at 7:05 PM+1 on 2023-07-25.",
+        "duration": "18 hr 30 min",
+        "airportLeave": "LGA",
+        "airportArive": "IST",
+        "layover": "Layover (1 of 2) is a None layover at ['YUL, GVA'].",
+        "emisions": "Carbon emissions estimate: 597.0 kilograms. 7% emissions ",
+        "price": "NGN601030.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Air Canada, Turkish AirlinesOperated by Air Canada Express - Jazz, Anadolujet Trademark of Turkish Airlines",
+        "description": "Leaves JFK at 1:25 PM on 2023-07-15 and arrives at SAW at 3:50 PM+1 on 2023-07-25.",
+        "duration": "19 hr 25 min",
+        "airportLeave": "JFK",
+        "airportArive": "SAW",
+        "layover": "Layover (1 of 2) is a None layover at ['YYZ, VIE'].",
+        "emisions": "",
+        "price": "NGN628694.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Turkish AirlinesJetBlue",
+        "description": "Leaves JFK at 12:30 AM on 2023-07-15 and arrives at IST at 5:20 PM on 2023-07-25.",
+        "duration": "9 hr 50 min",
+        "airportLeave": "JFK",
+        "airportArive": "IST",
+        "layover": "Nonstop",
+        "emisions": "Carbon emissions estimate: 481.0 kilograms. -14% emissions ",
+        "price": "NGN679888.0"
+    },
+    {
+        "thumbnail": "",
+        "companyName": "Turkish Airlines",
+        "description": "Leaves JFK at 7:30 PM on 2023-07-15 and arrives at IST at 12:20 PM+1 on 2023-07-25.",
+        "duration": "9 hr 50 min",
+        "airportLeave": "JFK",
+        "airportArive": "IST",
+        "layover": "Nonstop",
+        "emisions": "",
+        "price": "NGN693698.0"
+    }
+]
