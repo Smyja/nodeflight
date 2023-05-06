@@ -7,6 +7,8 @@ Run the following command to try the python version:
 pip install -r requirements.txt
 python a.py
 ```
+run ```brew install google-chrome``` if you don't have chrome installed on mac
+
 Output is in h.json
 
 Run the following command to try the node version:
