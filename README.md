@@ -1,18 +1,23 @@
 # nodeflight
  
 
-Run the following command to install the dependencies:
+Run the following command to try the python version:
 
 ```python
+pip install -r requirements.txt
 python a.py
 ```
-output is in h.json
+Output is in h.json
 
-Run ```node a.js``` for the puppeter version.
+Run the following command to try the node version:
+
+```npm install```
+
+```node a.js```
 
 # What's next?
 
 - [ ] create a separate but similar class to Scrape all flights
-- [ ] Scrape a the airline logo
-- [ ] Return the link to book the flight
+- [ ] Scrape the airline logos and return the link to the logo in the json
+- [ ] Return the link to book the flight in the json
 - [ ] Fix puppeter version
