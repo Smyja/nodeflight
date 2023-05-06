@@ -15,3 +15,4 @@ Run ```node a.js``` for the puppeter version.
 - [ ] create a separate but similar class to Scrape all flights
 - [ ] Scrape a the airline logo
 - [ ] Return the link to book the flight
+- [ ] Fix puppeter version
