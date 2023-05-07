@@ -150,32 +150,31 @@ class _Scrape:
 	def _make_url_request(url):
 		driver = webdriver.Chrome()
 		driver.get(url)
-
+	
 		# Waiting and initial XPATH cleaning
-		WebDriverWait(driver, timeout = 10).until(lambda d: len(_Scrape._get_flight_elements(d)) > 100)
+		WebDriverWait(driver, timeout = 10).until(lambda d: len(_Scrape._get_flight_elements(d)) > 9)
 		results = _Scrape._get_flight_elements(driver)
-
+		
 		driver.quit()
 
 		return results
 
 	@staticmethod
 	def _get_flight_elements(driver):
-		return driver.find_element(by = By.XPATH, value = '//body[@id = "yDmH0d"]').text.split('\n')
+		elements = driver.find_elements(by = By.XPATH, value = '//*[@id="yDmH0d"]/c-wiz[2]/div/div[2]/c-wiz/div[1]/c-wiz/div[2]/div[2]/div[5]/ul/li[@class = "pIav2d"]')
+		result = []
+		for el in elements:
+			result.extend( el.text.split('\n'))
+			x = re.search(r"url[^);]+", el.find_element(by=By.XPATH, value=".//div/div[2]/div/div[2]/div[1]/div").get_attribute("style"))
+			result.append(  x.group()[4:].replace("\\",""))
+		return result
 
 	@staticmethod
 	def _get_info(result):
 		info = []
-		collect = False
 		for r in result:
-			if 'more flights' in r:
-				collect = False
-
-			if collect and 'price' not in r.lower() and 'prices' not in r.lower() and 'other' not in r.lower() and ' – ' not in r.lower():
+			if  'price' not in r.lower() and 'prices' not in r.lower() and 'other' not in r.lower() and ' – ' not in r.lower():
 				info += [r]
-
-			if r == 'Sort by:':
-				collect = True
 
 		return info
 
@@ -246,7 +245,7 @@ class _Scrape:
 				trip_type = g[8 + i_diff]
 
 			flight_data.append({
-				"thumbnail": "", # Need a different method to scrape airline logo URLs
+				"thumbnail": g[-1], # Need a different method to scrape airline logo URLs
 				"companyName": airline,
 				"description": f"Leaves {origin} at {depart_time} on {date_leave} and arrives at {dest} at {arrival_time} on {date_return}.",
 				"duration": travel_time,
@@ -256,7 +255,8 @@ class _Scrape:
 				"emisions": f"Carbon emissions estimate: {co2_emission} kilograms. {emission}% emissions " if co2_emission and emission else "",
 				"price": f"NGN{price}"
 			})
-
+		df = pd.DataFrame(flight_data)
+		df.to_json("h.json", orient='records')
 		return flight_data
 
 

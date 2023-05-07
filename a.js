@@ -41,7 +41,7 @@ async function getFlightsResults() {
 
   const page = await browser.newPage();
   page.setViewport({
-    width: 1280,
+    width: 800,
     height: 720,
   });
 
@@ -97,15 +97,16 @@ await page.keyboard.press("Enter");
   await page.waitForTimeout(1000);
   await page.keyboard.press("Enter");
 
-  await page.waitForSelector(".VfPpkd-LgbsSe-OWXEXe-k8QpJ", { visible: true, timeout: 30000 });
-  await page.click(".VfPpkd-LgbsSe-OWXEXe-k8QpJ");
-  await page.waitForTimeout(1000);
-  await page.keyboard.press("Enter");
+  await page.waitForSelector('[aria-label="Search"]', { visible: true, timeout: 30000 });
+  const searchButton = await page.$('[aria-label="Search"]');
+  await searchButton.click({delay: 100});
+  await page.waitForTimeout(2000);
+  // await page.keyboard.press("Enter");
 
   const moreButton = await page.$(".XsapA");
   if (moreButton) {
     await moreButton.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(3000);
   }
 
   const flights = await getFlightsFromPage(page);
