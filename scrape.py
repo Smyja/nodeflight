@@ -228,12 +228,7 @@ class _Scrape:
   def website_search(airline):
     query = f"{airline} official website"
     results = search(query,
-                     tld='com',
-                     lang='en',
-                     num=10,
-                     start=0,
-                     stop=1,
-                     pause=2.0)
+                     lang='en',)
     website = next(results)
     return website
 
@@ -301,7 +296,7 @@ class _Scrape:
         f"Carbon emissions estimate: {co2_emission} kilograms. {emission}% emissions "
         if co2_emission and emission else "",
         "price":
-        f"Rs. {price}",
+        f"NGN {price}",
         "website":
         website,
       })
@@ -311,34 +306,4 @@ class _Scrape:
 
 Scrape = _Scrape()
 
-#Example Usage
-result = Scrape("JFK", "IST", "2023-07-15", "2023-07-25")
-flights = result.data
-origin = result.origin
-dest = result.dest
-date_leave = result.date_leave
-date_return = result.date_return
-for item in flights:
-  company_name = item['companyName']
-  price = item['price']
-  layover = item['layover']
-  airportLeave = item['airportLeave']
-  airportArrive = item['airportArive']
-  duration = item['duration']
-  description = item['description']
-  thumbnail = item['thumbnail']
-  website = item['website']
-  print("Company Name:", company_name)
-  print("Logo URL:", thumbnail)
-  print("Price:", price)
-  print("Layover(s):", layover)
-  print("Airport Leave:", airportLeave)
-  print("Airport Arrive:", airportArrive)
-  print("Duration of Flight:", duration)
-  print("Description:", description)
-  print("Website:", website)
 
-"""
-For Replit Bounty by @Smyja 
-Made by @TechAarya
-"""
