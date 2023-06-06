@@ -228,8 +228,7 @@ class _Scrape:
   def website_search(airline):
     query = f"{airline} official website"
     results = search(query,
-                     lang='en',
-                    )
+                     lang='en',)
     website = next(results)
     return website
 
@@ -297,7 +296,7 @@ class _Scrape:
         f"Carbon emissions estimate: {co2_emission} kilograms. {emission}% emissions "
         if co2_emission and emission else "",
         "price":
-        f"Rs. {price}",
+        f"NGN {price}",
         "website":
         website,
       })
@@ -306,3 +305,5 @@ class _Scrape:
 
 
 Scrape = _Scrape()
+
+
